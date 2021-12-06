@@ -2,7 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 ## Available Scripts
+Creating a React Application
+
+### `npx create-react-app appname`
+Install scss 
+### `npm install node-sass`
+
 
 In the project directory, you can run:
 
@@ -68,3 +75,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Deploy to Heroku:
+
+### `npm run build`
+
+### `npm i -g heroku`
+
+
+### `heroku login`
+
+### `heroku create appname(react-heroku-pragmatic)`
+Generate a remote git repository +url
+git remote add heroku +url
+
+git remote -v
+git add .
+git commit -m "firstcommit"
+git push heroku master
+
+

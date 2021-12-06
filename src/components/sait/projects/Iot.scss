@@ -1,0 +1,141 @@
+@import "../../../global.scss";
+
+.iot{
+    padding-left: 200px;
+    background-color: #fff;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+        display: none; /* Chrome Safari */
+      }
+      .des{
+          .description{
+              display:flex;
+              flex-direction: column;
+            h3{
+                font-size: 25px;
+                color:rgb(36, 34, 34);
+                font-weight: 300;
+                margin-bottom:15px;
+                margin-top:20px;
+                @include mobile{
+                    font-size:15px;
+                }
+            }
+            p{
+                font-size:15px;
+                color:grey;
+                font-weight:300;
+                margin-bottom: 10px;
+                @include mobile{
+                    font-size:10px;
+                }
+        
+            }
+            
+
+          }
+      }
+    h2{
+
+        color:crimson;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top:30px;
+        margin-bottom:15px;
+    }
+   
+    button{
+        font-size: 15px;
+        width:150px;
+        height:30px;
+        color:white;
+        background-color: crimson;
+        border:none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .5s ease;
+        margin:15px 0;
+        @include mobile{
+            margin-top: 10px;
+        }
+        &:focus{
+            outline:none;
+        }
+        &:hover{
+            background-color: rgb(245, 10, 57);
+
+            box-shadow: 2px 2px rgb(182, 179, 179);
+
+        }
+    }
+    .proj-des{
+
+        .text-left{
+            display:flex;
+            flex-direction: column;
+            h3{
+                font-size:20px;
+                color:inherit;
+                font-weight: bold;
+                margin-bottom:15px;
+                margin-top:15px;
+            }
+            p{
+                font-size:15px;
+                color:grey;
+                font-weight:300;
+                margin-bottom: 15px;
+            }
+        }
+    }  
+    .tools{
+        display:flex;
+        justify-content: center;
+
+        .tool{
+            display:flex;
+            height:70px;
+            
+            img{
+                margin-bottom:20px;
+                margin-right:50px;
+                overflow:hidden;
+                height:85%;
+                width:85%;
+                @include mobile{
+                    height:50%;
+                    width:50%;
+                }
+            }
+        }
+    }
+
+    .project-pic{
+        height:300px;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+        
+        img{
+           
+            object-fit:contain;
+            max-width:100%;
+            max-height:100%;    
+            @include mobile{
+                height:70%;
+                width:70%;
+            }
+
+        }
+
+    }
+      
+
+}
+
